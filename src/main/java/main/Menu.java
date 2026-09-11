@@ -14,6 +14,7 @@ public class Menu
 {
     //Inicialización
     private int opcion;
+    private Nivel4 n4 = new Nivel4();
     private Nivel5 n5 = new Nivel5();
     
     public void menuPrincipal()
@@ -45,7 +46,7 @@ public class Menu
                 break;
                 
                 case 4:
-                    
+                    n4.copiaArreglo();
                 break;
                 
                 case 5:
