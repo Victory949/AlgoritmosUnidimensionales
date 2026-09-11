@@ -20,12 +20,20 @@ public class Menu
     {
         do
         {
-            opcion=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el nivel que desee observar"));
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n     Ingrese el nivel que desee observar"
+                                                              + "\n             1.      Nivel 1"
+                                                              + "\n             2.      Nivel 2"
+                                                              + "\n             3.      Nivel 3"
+                                                              + "\n             4.      Nivel 4"
+                                                              + "\n             5.      Nivel 5"
+                                                              + "\n             6.      Salir"
+                                                              + "\n===================================="));
             
             switch(opcion)
             {
                 case 1:
-                    n5.sumaArreglos();
+                    
                 break;
                 
                 case 2:
@@ -41,7 +49,7 @@ public class Menu
                 break;
                 
                 case 5:
-                    
+                    n5.sumaArreglos();
                 break;
                 
                 case 6:
