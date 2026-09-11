@@ -8,14 +8,14 @@ package main;
  *
  * @author aaron
  */
-public class AlgoritmosUnidimensionales 
+public class Principal 
 {
 
     public static void main(String[] args) 
     {
-        Nivel5 n5 = new Nivel5();
-        n5.sumaArreglos();
+        Menu cMenu = new Menu();
+        cMenu.menuPrincipal();
         
     }//fin clase main
     
-}//fin clase AlgoritmosUnidimensionales
+}//fin clase Principal
