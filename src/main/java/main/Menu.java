@@ -47,7 +47,7 @@ public class Menu
                 break;
                 
                 case 4:
-                    
+                    n4.intercambioIndices();
                     n4.copiaArreglo();
                 break;
                 

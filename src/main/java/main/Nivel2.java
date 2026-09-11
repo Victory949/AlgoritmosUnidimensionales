@@ -18,11 +18,14 @@ public class Nivel2
         //Indicar el tamaño deseado
         int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿De cuanto tamaño han de ser los arreglos?"));
         
+        
         //Def Variables
         double decimal = 0.0;
         double valores[] = new double[tamano];
         double suma = 0;
         
+        if(tamano>0)
+        {
         //ciclo for para leer los numeros del arreglo
         for (int i = 0; i < valores.length; i++) {
             decimal = Double.parseDouble(JOptionPane.showInputDialog("Digite un numero con decimales"));
@@ -37,6 +40,11 @@ public class Nivel2
         
         double prom = suma/tamano;
         JOptionPane.showMessageDialog(null,String.format("Promedio del arreglo es de : %.2f%n",prom));
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Seleccione un numero valido");
+        }
         
     }//fin ejercicio 5
     

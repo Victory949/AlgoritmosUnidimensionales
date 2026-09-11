@@ -60,6 +60,69 @@ public class Nivel4 {
                 "\n[9] = "+fila[9]+" | [9] = "+filaCopia[9]);
         
         
-    }//fin copiaArreglo
+    }//fin ejericio 14
+    
+    //Ejericio 16
+    public void intercambioIndices()
+    {
+        //Indicar el tamaño deseado
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿Cuántos libros aberga su estante?"));
+        
+        int num = 0;
+        int libreria[] = new int[tamano];
+        int indice1 = 0;
+        int indice2 = 0;
+        int temporal = 0;
+        String resultado = "";
+        
+        //ciclo for para elegir los valores del arreglo
+        for (int i = 0; i < libreria.length; i++) {
+            
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de libro que ha escogido"));
+            libreria[i] = num;
+                    
+        }//fin ciclo for
+        
+       //ciclo for resultado
+       for (int i = 0; i < libreria.length; i++)
+       {
+           resultado += "\n["+i+"] = "+libreria[i];
+       }//fin ciclo for
+        
+        
+       JOptionPane.showMessageDialog(null,"----Libreria----"+resultado);
+       
+       
+       //Consulta de los dos indices que desee intercambiar
+       indice1= Integer.parseInt(JOptionPane.showInputDialog("Elija el primer digito que desee intercambiar de la librería"));
+       indice2= Integer.parseInt(JOptionPane.showInputDialog("Elija el segundo digito que desee intercambiar de la librería"));
+            
+        //IF para verificar que los indices correspondan al arreglo
+        if(indice1>=0 && indice1<libreria.length && indice2>=0 && indice2<libreria.length)
+        {
+            JOptionPane.showMessageDialog(null,"["+indice1+"]->["+indice2+"]");
+            temporal = libreria[indice1];
+            libreria[indice1] = libreria[indice2];
+            libreria[indice2] = temporal;
+            
+            //ACTUALIZACIÓN DE RESULTADO
+            for (int i = 0; i < libreria.length; i++) {
+                resultado += "\n[" + i + "] = " + libreria[i];
+            }//fin ciclo for
+            
+            JOptionPane.showMessageDialog(null,"----Libreria----"+resultado);
+            
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"Uno de los indices seleccionados no corresponde al arreglo");
+        }
+            
+        
+        
+        
+    }//fin ejericico 16
+    
+    
     
 }//fin clase Nivel4
