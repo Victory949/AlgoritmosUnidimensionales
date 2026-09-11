@@ -36,8 +36,47 @@ public class Nivel2
         }
         
         double prom = suma/tamano;
-        JOptionPane.showMessageDialog(null,String.format("Promedio: %.2f%n",prom));
+        JOptionPane.showMessageDialog(null,String.format("Promedio del arreglo es de : %.2f%n",prom));
         
     }//fin ejercicio 5
+    
+    //Ejercicio 6
+    public void asistencia()
+    {
+       boolean asistencias[] = new boolean[20];
+       int respuesta = 0;
+       int valorV = 0;
+       int valorF = 0;
+       int porcentaje = 0;
+       int cant = 1;
+       
+       //ciclo for para registrar asistencia
+       for(int i = 0;i<asistencias.length; i++)
+        {
+            respuesta=Integer.parseInt(JOptionPane.showInputDialog("Ha asisitido hoy el alumno #"+cant+"\n1. Si ha asistido\n2. Ausencia"));
+            if(respuesta == 1)
+            {
+                asistencias[i]=true;
+                valorV++;
+            }
+            else if(respuesta == 2)
+            {
+                asistencias[i]=false;
+                valorF++;
+            }
+            else if (respuesta!=2 && respuesta!=1)
+            {
+                JOptionPane.showMessageDialog(null,"Seleccione una opción\n1. Si ha asistido\n2. Ausencia");
+            }
+            
+            //Variable decorativa
+            cant++;
+            
+        }//fin for
+         
+         porcentaje=(valorV*100)/20;
+         
+        JOptionPane.showMessageDialog(null,"Cantidad de Alumnos = 20\nAsistencias = "+valorV+"\nAusencias = "+valorF+"\nPorcentaje Asistencia = "+porcentaje+"%");
+    }//fin ejercicio 6
     
 }//fin clase Nivel2

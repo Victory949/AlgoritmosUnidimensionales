@@ -39,7 +39,7 @@ public class Menu
                 break;
                 
                 case 2:
-                    n2.promedioDecimal();
+                    subMenu2();
                 break;
                 
                 case 3:
@@ -64,6 +64,47 @@ public class Menu
             
         }while(opcion!=6);
     }//fin menuPrincipal
+    
+    public void subMenu2()
+    {
+        do
+        {
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n             1.      Ver Ejercicio 5"
+                                                              + "\n             2.      Ver Ejercicio 6"
+                                                              + "\n             3.      Ver Ejercicio 7"
+                                                              + "\n             4.      Ver Ejercicio 8"
+                                                              + "\n             5.            Salir"
+                                                              + "\n===================================="));
+            
+            switch(opcion)
+            {
+                case 1:
+                    n2.promedioDecimal();
+                break;
+                
+                case 2:
+                    n2.asistencia();
+                break;
+                
+                case 3:
+                    
+                break;
+                
+                case 4:
+                     
+                break;
+                
+                case 5:
+                    
+                   
+                break;
+                
+                default:
+            }//fin switch
+            
+        }while(numEje!=5);
+    }//fin subMenu2
     
     public void subMenu5()
     {
