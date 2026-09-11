@@ -14,6 +14,7 @@ public class Menu
 {
     //Inicialización
     private int opcion, numEje;
+    private Nivel1 n1 = new Nivel1();
     private Nivel2 n2 = new Nivel2();
     private Nivel4 n4 = new Nivel4();
     private Nivel5 n5 = new Nivel5();
@@ -35,7 +36,7 @@ public class Menu
             switch(opcion)
             {
                 case 1:
-                    
+                    n1.completarPalabra();
                 break;
                 
                 case 2:
@@ -47,8 +48,7 @@ public class Menu
                 break;
                 
                 case 4:
-                    n4.intercambioIndices();
-                    n4.copiaArreglo();
+                    subMenu4();
                 break;
                 
                 case 5:
@@ -105,6 +105,48 @@ public class Menu
             
         }while(numEje!=5);
     }//fin subMenu2
+    
+    public void subMenu4()
+    {
+        do
+        {
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n             1.      Ver Ejercicio 13"
+                                                              + "\n             2.      Ver Ejercicio 14"
+                                                              + "\n             3.      Ver Ejercicio 15"
+                                                              + "\n             4.      Ver Ejercicio 16"
+                                                              + "\n             5.            Salir"
+                                                              + "\n===================================="));
+            
+            switch(opcion)
+            {
+                case 1:
+                    
+                break;
+                
+                case 2:
+                    n4.copiaArreglo();
+                break;
+                
+                case 3:
+                    
+                break;
+                
+                case 4:
+                     n4.intercambioIndices();
+                break;
+                
+                case 5:
+                    
+                   
+                break;
+                
+                default:
+            }//fin switch
+            
+        }while(numEje!=5);
+    }//fin subMenu4
+    
     
     public void subMenu5()
     {

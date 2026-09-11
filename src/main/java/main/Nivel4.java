@@ -66,7 +66,7 @@ public class Nivel4 {
     public void intercambioIndices()
     {
         //Indicar el tamaño deseado
-        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿Cuántos libros aberga su estante?"));
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿Cuántos libros alberga su estante?"));
         
         int num = 0;
         int libreria[] = new int[tamano];
@@ -106,6 +106,8 @@ public class Nivel4 {
             libreria[indice2] = temporal;
             
             //ACTUALIZACIÓN DE RESULTADO
+            resultado= "";
+            
             for (int i = 0; i < libreria.length; i++) {
                 resultado += "\n[" + i + "] = " + libreria[i];
             }//fin ciclo for
@@ -117,10 +119,6 @@ public class Nivel4 {
         {
             JOptionPane.showMessageDialog(null,"Uno de los indices seleccionados no corresponde al arreglo");
         }
-            
-        
-        
-        
     }//fin ejericico 16
     
     
