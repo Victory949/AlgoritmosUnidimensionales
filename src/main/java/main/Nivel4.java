@@ -25,11 +25,20 @@ public class Nivel4 {
             num = Integer.parseInt(JOptionPane.showInputDialog("Digite el digito que desee ingresar a su fila"));
             fila[i] = num;
             filaCopia[i] = num;
-            JOptionPane.showMessageDialog(null, "Se ha ingresado con exito!!");
-
+                    
         }//fin ciclo for
         
-        JOptionPane.showMessageDialog(null,"[0] de fila"+fila[0]+" y [0] de copia"+filaCopia[0]);
+        JOptionPane.showMessageDialog(null,"Fila - Fila Copia"
+                +"\n[0] = "+fila[0]+" |  [0] = "+filaCopia[0]+
+                "\n[1] = "+fila[1]+" |  [1] = "+filaCopia[1]+
+                "\n[2] = "+fila[2]+" |  [2] = "+filaCopia[2]+
+                "\n[3] = "+fila[3]+" |  [3] = "+filaCopia[3]+
+                "\n[4] = "+fila[4]+" |  [4] = "+filaCopia[4]+
+                "\n[5] = "+fila[5]+" |  [5] = "+filaCopia[5]+
+                "\n[6] = "+fila[6]+" |  [6] = "+filaCopia[6]+
+                "\n[7] = "+fila[7]+" |  [7] = "+filaCopia[7]+
+                "\n[8] = "+fila[8]+" |  [8] = "+filaCopia[8]+
+                "\n[9] = "+fila[9]+"  |  [9] = "+filaCopia[9]);
         
         //ciclo for para modificar el arreglo copiado
         for (int i = 0; i < filaCopia.length; i++) {
@@ -38,7 +47,17 @@ public class Nivel4 {
             filaCopia[i] = num;
             
         }
-        JOptionPane.showMessageDialog(null,"[0] de fila"+fila[0]+" y [0] de copia"+filaCopia[0]);
+        JOptionPane.showMessageDialog(null,"Fila - Fila Copia"
+                +"\n[0] = "+fila[0]+" | [0] = "+filaCopia[0]+
+                "\n[1] = "+fila[1]+" | [1] = "+filaCopia[1]+
+                "\n[2] = "+fila[2]+" | [2] = "+filaCopia[2]+
+                "\n[3] = "+fila[3]+" | [3] = "+filaCopia[3]+
+                "\n[4] = "+fila[4]+" | [4] = "+filaCopia[4]+
+                "\n[5] = "+fila[5]+" | [5] = "+filaCopia[5]+
+                "\n[6] = "+fila[6]+" | [6] = "+filaCopia[6]+
+                "\n[7] = "+fila[7]+" | [7] = "+filaCopia[7]+
+                "\n[8] = "+fila[8]+" | [8] = "+filaCopia[8]+
+                "\n[9] = "+fila[9]+" | [9] = "+filaCopia[9]);
         
         
     }//fin copiaArreglo
