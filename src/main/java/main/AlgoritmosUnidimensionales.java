@@ -8,9 +8,14 @@ package main;
  *
  * @author aaron
  */
-public class AlgoritmosUnidimensionales {
+public class AlgoritmosUnidimensionales 
+{
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
+    public static void main(String[] args) 
+    {
+        Nivel5 n5 = new Nivel5();
+        n5.sumaArreglos();
+        
+    }//fin clase main
+    
+}//fin clase AlgoritmosUnidimensionales

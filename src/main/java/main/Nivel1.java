@@ -8,6 +8,7 @@ package main;
  *
  * @author aaron
  */
-public class Nivel1 {
+public class Nivel1 
+{
     
 }
