@@ -76,7 +76,7 @@ public class Nivel5
         
         //ciclo for para leer los numeros del arreglo
         for (int i = 0; i < orden.length; i++) {
-            num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero para el arreglo 2"));
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
             orden[i] = num;
             
         }

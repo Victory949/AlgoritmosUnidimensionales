@@ -14,6 +14,7 @@ public class Menu
 {
     //Inicialización
     private int opcion, numEje;
+    private Nivel2 n2 = new Nivel2();
     private Nivel4 n4 = new Nivel4();
     private Nivel5 n5 = new Nivel5();
     
@@ -38,7 +39,7 @@ public class Menu
                 break;
                 
                 case 2:
-                    
+                    n2.promedioDecimal();
                 break;
                 
                 case 3:
