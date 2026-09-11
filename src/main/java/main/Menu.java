@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 public class Menu 
 {
     //Inicialización
-    private int opcion;
+    private int opcion, numEje;
     private Nivel4 n4 = new Nivel4();
     private Nivel5 n5 = new Nivel5();
     
@@ -46,11 +46,12 @@ public class Menu
                 break;
                 
                 case 4:
+                    
                     n4.copiaArreglo();
                 break;
                 
                 case 5:
-                    n5.sumaArreglos();
+                    subMenu5();
                 break;
                 
                 case 6:
@@ -63,4 +64,47 @@ public class Menu
         }while(opcion!=6);
     }//fin menuPrincipal
     
+    public void subMenu5()
+    {
+        do
+        {
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n             1.      Ver Ejercicio 17"
+                                                              + "\n             2.      Ver Ejercicio 18"
+                                                              + "\n             3.      Ver Ejercicio 19"
+                                                              + "\n             4.      Ver Ejercicio 20"
+                                                              + "\n             5.            Salir"
+                                                              + "\n===================================="));
+            
+            switch(opcion)
+            {
+                case 1:
+                    n5.simetria();
+                break;
+                
+                case 2:
+                    
+                break;
+                
+                case 3:
+                    
+                break;
+                
+                case 4:
+                     n5.sumaArreglos();
+                break;
+                
+                case 5:
+                    
+                   
+                break;
+                
+                default:
+            }//fin switch
+            
+        }while(numEje!=5);
+    }//fin subMenu5
+    
 }//fin clase menu
+
+

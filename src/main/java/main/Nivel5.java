@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class Nivel5 
 {
-    //Ejercicio 1
+    //Ejercicio 17
     public void sumaArreglos()
     {
         //Indicar el tamaño deseado
@@ -62,4 +62,46 @@ public class Nivel5
         }
     }//fin metodo sumaArreglos
     
+    
+    //Ejercicio 20
+    public void simetria()
+    {
+        //Indicar el tamaño deseado
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿De cuanto tamaño han de ser los arreglos?"));
+        
+        //Def Variables
+        int num = 0;
+        int orden[] = new int[tamano];
+        boolean noEsCapicúa = false;
+        
+        //ciclo for para leer los numeros del arreglo
+        for (int i = 0; i < orden.length; i++) {
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero para el arreglo 2"));
+            orden[i] = num;
+            
+        }
+        
+        int fin = orden.length-1;
+        
+        for(int i = 0; i < orden.length; i++)
+        {
+            if (orden[i] != orden[fin]) 
+            {
+                noEsCapicúa = true;
+            } 
+            else 
+            {                
+               fin--;
+            }
+        }//fin for
+        
+        if(noEsCapicúa==false)
+        {
+             JOptionPane.showMessageDialog(null,"Es capicúa");
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"No es capicúa");
+        }
+    }//fin metodo simetria
 }//fin clase Nivel5
