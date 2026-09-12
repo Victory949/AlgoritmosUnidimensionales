@@ -12,6 +12,23 @@ import javax.swing.JOptionPane;
  */
 public class Nivel1 
 {
+    //Ejercicio 1
+    public void longitudDecimales () {
+        
+        double[] numeros={1.75,3.50,7.42,9.99};
+        
+        int longitud =numeros.length;
+        double ultimoElemento=numeros[numeros.length];
+        
+        String resultado= "Longitud del arreglo: "+longitud+
+                          "\n Ultimo elemento: "+ultimoElemento;
+                
+          JOptionPane.showMessageDialog(null, resultado);
+        
+    } //Fin del ejercicio 1
+    
+    
+    
     //Ejericio 4
     public void completarPalabra()
     {
