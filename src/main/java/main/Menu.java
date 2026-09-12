@@ -16,6 +16,7 @@ public class Menu
     private int opcion, numEje;
     private Nivel1 n1 = new Nivel1();
     private Nivel2 n2 = new Nivel2();
+    private Nivel3 n3 = new Nivel3();
     private Nivel4 n4 = new Nivel4();
     private Nivel5 n5 = new Nivel5();
     
@@ -44,7 +45,7 @@ public class Menu
                 break;
                 
                 case 3:
-                    
+                    n3.cantValor();
                 break;
                 
                 case 4:

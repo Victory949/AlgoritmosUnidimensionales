@@ -19,6 +19,7 @@ public class Nivel1
         char[] caracteres = new char[palabra.length()];
         String resultado ="";
         
+        
         //ciclo for para convertir una palabra conocida a un arreglo de caracteres
         for (int i = 0; i < caracteres.length; i++) 
         {
@@ -28,7 +29,7 @@ public class Nivel1
             
         }
         
-        JOptionPane.showMessageDialog(null,"--------------\n"+ resultado +"\n--------------");
+        JOptionPane.showMessageDialog(null,"--------------"+ resultado +"\n--------------");
     } //fin ejercicio 4
     
 }//fin clase Nivel1
