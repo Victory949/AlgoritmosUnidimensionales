@@ -34,7 +34,7 @@ public class Nivel3
         
         valorBuscado=Integer.parseInt(JOptionPane.showInputDialog("Escriba el valor que busca ver"));
                 
-        //ciclo cuuenta de valores repetidos
+        //ciclo cuenta de valores repetidos
         for (int i = 0; i < valores.length; i++) 
         {
             
@@ -60,5 +60,48 @@ public class Nivel3
         }
         
     }//fin ejercicio 11
+    
+    //Ejercicio 12
+    public void separarCaracteres()
+    {
+        //Indicar el tamaño deseado
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿De que tamaño desea que sea el arreglo?"));
+        char[] letras = new char[tamano];
+        char letra = ' ';
+        int vocal = 0;
+        int consonantes = 0;
+        int otros = 0;
+        
+        //extra
+        int cant = 1;
+        
+        //Ciclo for para digitar un caracter y registrar tipo
+        for (int i = 0; i < letras.length; i++) 
+        {
+            letra = JOptionPane.showInputDialog("Escriba el caracter #"+cant+" que requiera").charAt(0);
+            letras[i] = letra;
+            cant++;
+            
+            if (letras[i]== 'a' || letras[i]== 'e' || letras[i]== 'i' || letras[i]== 'o' || letras[i]== 'u')
+            {
+                vocal++;
+            }
+            else if(letras[i]>='a' && letras[i]<='z')
+            {
+                consonantes++;
+            }
+            else
+            {
+                otros++;
+            }
+
+        }//fin for
+        
+        //Resultado
+            JOptionPane.showMessageDialog(null,"----------------\nCantidad vocales: "+vocal
+                                            +"\nCantidad consonantes: "+consonantes
+                                            +"\nCantidad de caracteres especiales/no identificados: "+otros);
+        
+    }//fin ejercicio 12
     
 }//fin clase nivel3

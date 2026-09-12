@@ -26,7 +26,7 @@ public class Nivel1
         //ciclo for para conseguir resultado y registrar numeros
         for (int i = 0; i < numeros.length; i++) 
         {
-            num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de libro que ha escogido"));
+            num = Integer.parseInt(JOptionPane.showInputDialog("Registre el numero que desee"));
             numeros[i] = num;
             resultado += "\n"+numeros[i];
             

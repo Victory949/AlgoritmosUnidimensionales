@@ -37,8 +37,7 @@ public class Menu
             switch(opcion)
             {
                 case 1:
-                    n1.leerArreglo();
-                    n1.completarPalabra();
+                    subMenu1();
                 break;
                 
                 case 2:
@@ -46,6 +45,7 @@ public class Menu
                 break;
                 
                 case 3:
+                    n3.separarCaracteres();
                     n3.cantValor();
                 break;
                 
@@ -66,6 +66,47 @@ public class Menu
             
         }while(opcion!=6);
     }//fin menuPrincipal
+    
+    public void subMenu1()
+    {
+        do
+        {
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n             1.      Ver Ejercicio 1"
+                                                              + "\n             2.      Ver Ejercicio 2"
+                                                              + "\n             3.      Ver Ejercicio 3"
+                                                              + "\n             4.      Ver Ejercicio 4"
+                                                              + "\n             5.            Salir"
+                                                              + "\n===================================="));
+            
+            switch(opcion)
+            {
+                case 1:
+                    
+                break;
+                
+                case 2:
+                   
+                break;
+                
+                case 3:
+                        n1.leerArreglo();
+                break;
+                
+                case 4:
+                        n1.completarPalabra();
+                break;
+                
+                case 5:
+                    
+                   
+                break;
+                
+                default:
+            }//fin switch
+            
+        }while(numEje!=5);
+    }//fin subMenu1
     
     public void subMenu2()
     {
