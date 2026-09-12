@@ -37,6 +37,7 @@ public class Nivel1
             resultado +="Posición "+i+": "+valores[i];
         }
         JOptionPane.showMessageDialog(null, resultado);
+        
     }//Fin del ejercicio 2
     
     
