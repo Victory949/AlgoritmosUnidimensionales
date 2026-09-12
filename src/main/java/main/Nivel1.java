@@ -12,6 +12,29 @@ import javax.swing.JOptionPane;
  */
 public class Nivel1 
 {
+    //Ejercicio 3
+    public void leerArreglo()
+    {
+        //Consultar tamaño
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿Que tan grande desea su arreglo?"));
+        
+        int num = 0;
+        int[] numeros = new int[tamano];
+        String resultado ="";
+
+        
+        //ciclo for para conseguir resultado y registrar numeros
+        for (int i = 0; i < numeros.length; i++) 
+        {
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de libro que ha escogido"));
+            numeros[i] = num;
+            resultado += "\n"+numeros[i];
+            
+        }
+        
+        JOptionPane.showMessageDialog(null,"--------------"+ resultado +"\n--------------");
+        
+    }//fin ejericicio 3
     //Ejericio 4
     public void completarPalabra()
     {

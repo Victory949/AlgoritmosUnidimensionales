@@ -37,6 +37,7 @@ public class Menu
             switch(opcion)
             {
                 case 1:
+                    n1.leerArreglo();
                     n1.completarPalabra();
                 break;
                 
