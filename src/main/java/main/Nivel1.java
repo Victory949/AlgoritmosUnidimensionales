@@ -27,6 +27,17 @@ public class Nivel1
         
     } //Fin del ejercicio 1
     
+    //Ejercicio 2
+    public void posicionBoolean (){
+        
+        boolean [] valores = {true, true, false, true, false, true};
+        String resultado = "";
+        
+        for (int i=0;i<valores.length; i++){
+            resultado +="Posición "+i+": "+valores[i];
+        }
+        JOptionPane.showMessageDialog(null, resultado);
+    }//Fin del ejercicio 2
     
     
     //Ejericio 4
