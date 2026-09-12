@@ -87,4 +87,42 @@ public class Nivel2
         JOptionPane.showMessageDialog(null,"Cantidad de Alumnos = 20\nAsistencias = "+valorV+"\nAusencias = "+valorF+"\nPorcentaje Asistencia = "+porcentaje+"%");
     }//fin ejercicio 6
     
+    //Ejercicio 7
+    public void cantidadVocales(){
+        char[] vocales={'a','e','i','o','u','á','é','í','ó','ú'};
+        
+        String arreglo= JOptionPane.showInputDialog("Escriba una palabra");
+        int contador=0;
+        
+        for (int i=0;i<arreglo.length();i++){
+            for(char v:vocales){
+                if(arreglo.charAt(i)==v)contador++;
+            }
+        }
+      JOptionPane.showMessageDialog(null, "Cantidad de vocales: "+contador); 
+    }//Fin ejercicio 7
+    
+    //Ejercicio 8
+    public void sumaNumeros(){
+        int [] numeros = new int[15]; 
+        int sumaPares =0;
+        int sumaImpares=0;
+        
+        for (int i=0;i<numeros.length;i++){
+            numeros[i] =Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número en la posición "+i));
+        }
+        for (int i=0;i<numeros.length;i++){
+            if (i%2 == 0){
+               sumaPares+=numeros[i];
+            }else{
+                sumaImpares+=numeros[i];
+            }
+          }
+        String resultado = "Suma en índices pares: "+sumaPares
+                +"\n Suma en índices impares: "+sumaImpares;
+    
+        JOptionPane.showMessageDialog(null,resultado);
+                
+    }
+    
 }//fin clase Nivel2
