@@ -28,7 +28,7 @@ public class Nivel1
             
         }
         
-        JOptionPane.showMessageDialog(null, resultado);
+        JOptionPane.showMessageDialog(null,"--------------\n"+ resultado +"\n--------------");
     } //fin ejercicio 4
     
 }//fin clase Nivel1
