@@ -121,8 +121,7 @@ public class Nivel2
         String resultado = "Suma en índices pares: "+sumaPares
                 +"\n Suma en índices impares: "+sumaImpares;
     
-        JOptionPane.showMessageDialog(null,resultado);
-                
-    }
+        JOptionPane.showMessageDialog(null,resultado);         
+    }//Fin ejercicio 8
     
 }//fin clase Nivel2

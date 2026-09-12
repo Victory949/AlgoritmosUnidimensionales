@@ -88,18 +88,14 @@ public class Menu
                 break;
                 
                 case 3:
-                    n2.cantidadVocales();
-                    
+                    n2.cantidadVocales();  
                 break;
                 
                 case 4:
                     n2.sumaNumeros();
-                     
                 break;
                 
                 case 5:
-                    
-                   
                 break;
                 
                 default:
