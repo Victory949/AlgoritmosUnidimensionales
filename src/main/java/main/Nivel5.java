@@ -62,6 +62,52 @@ public class Nivel5
         }
     }//fin metodo sumaArreglos
     
+    //Ejercicio 18
+    public void diferentePrecios(){
+    double[] precios1={12.50, 8.75, 20.00, 15.30, 9.99};
+    double[] precios2={10.20, 9.50, 18.75, 16.00, 7.49};
+    double[] diferencias=new double[precios1.length];
+    
+    double suma=0;
+    
+    for(int i=0;i<precios1.length;i++){
+        diferencias[i]=Math.abs(precios1[i]-precios2[2]);
+        suma+=diferencias[i];  
+    }
+    double promedio=suma/diferencias.length;
+    
+    String resultado="Diferencias:\n";
+    for (int i=0;i<diferencias.length;i++){
+        resultado+=diferencias[i]+"";
+    }
+    resultado+="\n\nPromedio de las diferencias: "+promedio;
+    
+    JOptionPane.showMessageDialog(null,resultado);
+    }//Fin del ejercicio18
+    
+    //Ejercicio 19
+    public void ordenAscendente(){
+        int[] numeros=new int [10];
+        
+        for(int i=0;i<numeros.length;i++){
+          numeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero en la posicion "+i));
+        }
+        boolean ordenado=true;//se asume hasta que se demuestre lo contrario\
+        
+        for(int i=0;i<numeros.length-1;i++){
+            if (numeros[i]>numeros[i+1]){
+                ordenado=false;
+                break;
+            }
+        }
+        String resultado;
+        if (ordenado){
+            resultado="El arreglo SI esta ordenado de forma ascendente";
+        }else{
+            resultado="El arreglo NO esta ordendo de forma ascente";
+       }
+        JOptionPane.showMessageDialog(null,resultado);
+    }//Fin del ejercico 19
     
     //Ejercicio 20
     public void simetria()

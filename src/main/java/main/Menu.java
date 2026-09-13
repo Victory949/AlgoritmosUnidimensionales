@@ -37,7 +37,7 @@ public class Menu
             switch(opcion)
             {
                 case 1:
-                    n1.completarPalabra();
+                    subMenu1();
                 break;
                 
                 case 2:
@@ -45,7 +45,7 @@ public class Menu
                 break;
                 
                 case 3:
-                    n3.cantValor();
+                    subMenu3();
                 break;
                 
                 case 4:
@@ -57,20 +57,62 @@ public class Menu
                 break;
                 
                 case 6:
-                    
+                    JOptionPane.showMessageDialog(null,"Muchas gracias por su visita! Tenga bonito día");
                 break;
                 
                 default:
+                    JOptionPane.showMessageDialog(null,"Seleccione una opcion valida");
             }//fin switch
             
         }while(opcion!=6);
     }//fin menuPrincipal
     
+    public void subMenu1()
+    {
+        do
+        {
+            numEje=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n             1.      Ver Ejercicio 1"
+                                                              + "\n             2.      Ver Ejercicio 2"
+                                                              + "\n             3.      Ver Ejercicio 3"
+                                                              + "\n             4.      Ver Ejercicio 4"
+                                                              + "\n             5.            Salir"
+                                                              + "\n===================================="));
+            
+            switch(numEje)
+            {
+                case 1:
+                    n1.longitudDecimales ();
+                break;
+                
+                case 2:
+                    n1.posicionBoolean ();
+                break;
+                
+                case 3:
+                        n1.leerArreglo();
+                break;
+                
+                case 4:
+                        n1.completarPalabra();
+                break;
+                
+                case 5:
+                    JOptionPane.showMessageDialog(null,"Ha salido del Nivel 1 con exito");
+                break;
+                
+                default:
+                    JOptionPane.showMessageDialog(null,"Seleccione una opcion valida");
+            }//fin switch
+            
+        }while(numEje!=5);
+    }//fin subMenu1
+    
     public void subMenu2()
     {
         do
         {
-            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+            numEje=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
                                                               + "\n             1.      Ver Ejercicio 5"
                                                               + "\n             2.      Ver Ejercicio 6"
                                                               + "\n             3.      Ver Ejercicio 7"
@@ -78,7 +120,7 @@ public class Menu
                                                               + "\n             5.            Salir"
                                                               + "\n===================================="));
             
-            switch(opcion)
+            switch(numEje)
             {
                 case 1:
                     n2.promedioDecimal();
@@ -97,19 +139,66 @@ public class Menu
                 break;
                 
                 case 5:
+
+
+                    JOptionPane.showMessageDialog(null,"Ha salido del Nivel 2 con exito");
+                   
+
                 break;
                 
                 default:
+                    JOptionPane.showMessageDialog(null,"Seleccione una opcion valida");
             }//fin switch
             
         }while(numEje!=5);
     }//fin subMenu2
+
+    public void subMenu3()
+    {
+        do
+        {
+            numEje=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+                                                              + "\n             1.      Ver Ejercicio 9"
+                                                              + "\n             2.      Ver Ejercicio 10"
+                                                              + "\n             3.      Ver Ejercicio 11"
+                                                              + "\n             4.      Ver Ejercicio 12"
+                                                              + "\n             5.            Salir"
+                                                              + "\n===================================="));
+            
+            switch(numEje)
+            {
+                case 1:
+                    n3.valorEntero();
+                break;
+                
+                case 2:
+                    n3. solicitarNum();
+                break;
+                
+                case 3:
+                    n3.cantValor();
+                break;
+                
+                case 4:
+                     n3.separarCaracteres();
+                break;
+                
+                case 5:
+                    JOptionPane.showMessageDialog(null,"Ha salido del Nivel 3 con exito");
+                break;
+                
+                default:
+                    JOptionPane.showMessageDialog(null,"Seleccione una opcion valida");
+            }//fin switch
+            
+        }while(numEje!=5);
+    }//fin subMenu3
     
     public void subMenu4()
     {
         do
         {
-            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+            numEje=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
                                                               + "\n             1.      Ver Ejercicio 13"
                                                               + "\n             2.      Ver Ejercicio 14"
                                                               + "\n             3.      Ver Ejercicio 15"
@@ -117,10 +206,9 @@ public class Menu
                                                               + "\n             5.            Salir"
                                                               + "\n===================================="));
             
-            switch(opcion)
+            switch(numEje)
             {
-                case 1:
-                    
+                case 1:n4.arregloEnteros ();              
                 break;
                 
                 case 2:
@@ -128,7 +216,7 @@ public class Menu
                 break;
                 
                 case 3:
-                    
+                    n4.rotarPosicion();
                 break;
                 
                 case 4:
@@ -136,11 +224,12 @@ public class Menu
                 break;
                 
                 case 5:
-                    
+                    JOptionPane.showMessageDialog(null,"Ha salido del Nivel 4 con exito");
                    
                 break;
                 
                 default:
+                    JOptionPane.showMessageDialog(null,"Seleccione una opcion valida");
             }//fin switch
             
         }while(numEje!=5);
@@ -151,7 +240,7 @@ public class Menu
     {
         do
         {
-            opcion=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
+            numEje=Integer.parseInt(JOptionPane.showInputDialog("\n===================================="
                                                               + "\n             1.      Ver Ejercicio 17"
                                                               + "\n             2.      Ver Ejercicio 18"
                                                               + "\n             3.      Ver Ejercicio 19"
@@ -159,18 +248,18 @@ public class Menu
                                                               + "\n             5.            Salir"
                                                               + "\n===================================="));
             
-            switch(opcion)
+            switch(numEje)
             {
                 case 1:
                     n5.simetria();
                 break;
                 
                 case 2:
-                    
+                    n5.diferentePrecios();
                 break;
                 
                 case 3:
-                    
+                    n5.ordenAscendente();
                 break;
                 
                 case 4:
@@ -179,10 +268,11 @@ public class Menu
                 
                 case 5:
                     
-                   
+                   JOptionPane.showMessageDialog(null,"Ha salido del Nivel 5 con exito");
                 break;
                 
                 default:
+                    JOptionPane.showMessageDialog(null,"Seleccione una opcion valida");
             }//fin switch
             
         }while(numEje!=5);

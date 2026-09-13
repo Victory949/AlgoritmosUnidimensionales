@@ -104,6 +104,7 @@ public class Nivel2
     
     //Ejercicio 8
     public void sumaNumeros(){
+        
         int [] numeros = new int[15]; 
         int sumaPares =0;
         int sumaImpares=0;

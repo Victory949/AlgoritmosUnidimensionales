@@ -12,6 +12,55 @@ import javax.swing.JOptionPane;
  */
 public class Nivel3 
 {
+    //Ejercicio 9
+    public void valorEntero(){
+        int[] numeros=new int[10];
+        
+        //ciclo leer los numeros
+        for(int i=0;i<numeros.length;i++){
+            numeros[i]=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero en la posicion "+i));
+        }
+        int mayor=numeros[0];
+        int menor=numeros[0];
+        
+        for(int i=1;i<numeros.length;i++){
+            if (numeros[i]>mayor){
+                mayor=numeros[i];
+            }
+            if (numeros[i]<menor){
+                menor=numeros[i];
+            }
+        }
+        String resultado= "Valor mayor: "+mayor+"\nValor menor: "+menor;
+        
+        JOptionPane.showMessageDialog(null,resultado);
+    }
+    //Ejercicio 10
+    public void solicitarNum(){
+        int[]numeros=new int[10];
+        
+        for(int i=0;i<numeros.length;i++){
+            numeros[i]=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero en la posicion "+i));
+        }
+        //solicitar el num buscar
+        int buscando= Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero a buscar"));
+        int posicion=-1;//valor por si no se encuentra
+        
+        for(int i=0;i<numeros.length;i++){
+            if(numeros[i]==buscando){
+                posicion=i;
+                break;
+            }
+        }
+        String resultado;
+        if(posicion!=-1){
+            resultado= "El numero "+buscando+" esta en la posicion: "+posicion;
+        }else{
+            resultado="El numero "+buscando+ " no existe";
+        }
+       JOptionPane.showMessageDialog(null,resultado);
+    }
+    
     //Ejercicio 11
     public void cantValor()
     {
@@ -34,7 +83,7 @@ public class Nivel3
         
         valorBuscado=Integer.parseInt(JOptionPane.showInputDialog("Escriba el valor que busca ver"));
                 
-        //ciclo cuuenta de valores repetidos
+        //ciclo cuenta de valores repetidos
         for (int i = 0; i < valores.length; i++) 
         {
             
@@ -61,4 +110,47 @@ public class Nivel3
         
     }//fin ejercicio 11
     
-}//fin clasenivel3
+    //Ejercicio 12
+    public void separarCaracteres()
+    {
+        //Indicar el tamaño deseado
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("¿De que tamaño desea que sea el arreglo?"));
+        char[] letras = new char[tamano];
+        char letra = ' ';
+        int vocal = 0;
+        int consonantes = 0;
+        int otros = 0;
+        
+        //extra
+        int cant = 1;
+        
+        //Ciclo for para digitar un caracter y registrar tipo
+        for (int i = 0; i < letras.length; i++) 
+        {
+            letra = JOptionPane.showInputDialog("Escriba el caracter #"+cant+" que requiera").charAt(0);
+            letras[i] = letra;
+            cant++;
+            
+            if (letras[i]== 'a' || letras[i]== 'e' || letras[i]== 'i' || letras[i]== 'o' || letras[i]== 'u')
+            {
+                vocal++;
+            }
+            else if(letras[i]>='a' && letras[i]<='z')
+            {
+                consonantes++;
+            }
+            else
+            {
+                otros++;
+            }
+
+        }//fin for
+        
+        //Resultado
+            JOptionPane.showMessageDialog(null,"----------------\nCantidad vocales: "+vocal
+                                            +"\nCantidad consonantes: "+consonantes
+                                            +"\nCantidad de caracteres especiales/no identificados: "+otros);
+        
+    }//fin ejercicio 12
+    
+}//fin clase nivel3

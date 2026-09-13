@@ -12,6 +12,25 @@ import javax.swing.JOptionPane;
  */
 public class Nivel4 {
     
+    //Ejercicio 13
+    public void arregloEnteros (){
+        int[] numeros={1,2,3,4,5};
+        int temp;
+        
+        //recorrido solo hasta la mitad(si no, se invierte 2 veces y queda igual)
+         for (int i = 0; i < numeros.length/2;i++){
+             temp=numeros[i];
+             numeros[i]=numeros[numeros.length-1-i];
+             numeros[numeros.length-1-i]=temp;
+         }
+        //arreglo uya invertido
+        String resultado="Arreglo invertido:\n";
+        for (int i=0;i<numeros.length;i++){
+            resultado+=numeros[i]+"";
+        }
+        JOptionPane.showMessageDialog(null,resultado);
+    }//Fin del ejercico 13
+    
     //ejericio 14
     public void copiaArreglo()
     {
@@ -61,6 +80,30 @@ public class Nivel4 {
         
         
     }//fin ejericio 14
+    
+    //Ejercicio 15
+    public void rotarPosicion(){
+        
+        int[] numeros={10,20,30,40,50};
+        int [] rotado=new int[numeros.length];
+        
+        //el ultimo elemento pasa a la primera
+        rotado[0]=numeros[numeros.length-1];
+        
+        //los dem[as se mueven a la derecha
+        for (int i=0;i<numeros.length-1;i++){
+            rotado[i+1]=numeros[i];
+        }
+        String resultado= "Arreglo original:\n ";
+        for (int i=0;i<numeros.length;i++){
+            resultado+=numeros[i]+"";
+        }
+        resultado+= "\n\nArreglo rotado a la derecha:\n";
+        for(int i=0; i<rotado.length;i++){
+            resultado+= rotado[i]+"";
+        }
+        JOptionPane.showMessageDialog(null, resultado);
+    }//Fin del ejercicio 15
     
     //Ejericio 16
     public void intercambioIndices()
@@ -121,6 +164,5 @@ public class Nivel4 {
         }
     }//fin ejericico 16
     
-    
-    
+
 }//fin clase Nivel4
